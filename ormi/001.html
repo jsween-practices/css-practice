@@ -1,11 +1,11 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>form</title>
-</head>
-<body>
+  </head>
+  <body>
     <!--
         form: 사용자가 입력한 데이터를 서버로 보내기 위한 양식
         input: 사용자가 입력하는 부분
@@ -19,14 +19,14 @@
     -->
     <!-- 보통 로그인은 POST로 처리, 여러분에게 설명을 위해 남겨둡니다. -->
     <form action="" method="get">
-        <input type="text" name="id">
-        <input type="password" name="pw">
-        <button>로그인</button>
+      <input type="text" name="id" />
+      <input type="password" name="pw" />
+      <button>로그인</button>
     </form>
     <!-- 이렇게 많이 사용합니다. -->
     <form action="" method="get">
-        <input type="text" name="q">
-        <button>검색</button>
+      <input type="text" name="q" />
+      <button>검색</button>
     </form>
     <!--
         로그인 버튼을 누르니 아래와 같이 주소창에 나타남 
@@ -53,5 +53,5 @@
 
         4. 그러나 검색 키워드를 GET으로 만드는 것이 절대적이진 않습니다. 예를 들어 정부의 부동산 서비스의 경우에는 검색 키워드도 POST로 처리합니다. 보안상 정보를 감춰야 할 때에는 POST를 사용합니다.
     -->
-</body>
+  </body>
 </html>

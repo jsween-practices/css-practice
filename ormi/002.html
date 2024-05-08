@@ -1,11 +1,11 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>form</title>
-</head>
-<body>
+  </head>
+  <body>
     <!-- 
     action: 내 요청을 처리할 주소, 비어있으면 나 자신
     method: 요청을 무엇으로 보낼지(택배, 인편, 특급배송....)
@@ -16,26 +16,26 @@
     <!-- 로그인 같은 경우 POST로 많이 사용합니다. -->
     <h2>post</h2>
     <form action="http://127.0.0.1:8000" method="post">
-        <input type="text" name="id">
-        <input type="password" name="pw">
-        <button>로그인</button>
+      <input type="text" name="id" />
+      <input type="password" name="pw" />
+      <button>로그인</button>
     </form>
     <h2>get</h2>
     <form action="http://127.0.0.1:8000" method="get">
-        <input type="text" name="id">
-        <input type="password" name="pw">
-        <button>로그인</button>
+      <input type="text" name="id" />
+      <input type="password" name="pw" />
+      <button>로그인</button>
     </form>
     <!-- 검색창 같은 경우 GET으로 많이 사용합니다. 그렇지만 POST로 사용하는 경우도 종종 있습니다. -->
     <h2>post</h2>
     <form action="http://127.0.0.1:8000" method="post">
-        <input type="text" name="q">
-        <button>검색</button>
+      <input type="text" name="q" />
+      <button>검색</button>
     </form>
     <h2>get</h2>
     <form action="http://127.0.0.1:8000" method="get">
-        <input type="text" name="q">
-        <button>검색</button>
+      <input type="text" name="q" />
+      <button>검색</button>
     </form>
     <!--
 
@@ -64,5 +64,5 @@
 
         4. 그러나 검색 키워드를 GET으로 만드는 것이 절대적이진 않습니다. 예를 들어 정부의 부동산 서비스의 경우에는 검색 키워드도 POST로 처리합니다. 보안상 정보를 감춰야 할 때에는 POST를 사용합니다.
     -->
-</body>
+  </body>
 </html>
