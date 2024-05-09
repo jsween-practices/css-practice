@@ -59,15 +59,15 @@
             left: 16px;
             right: 16px;
             vertical-align: bottom;
-        }
 
-        .classed-menu {
-            display: flex;
-            align-items: center;
-            height: fit-content;
+            > div {
+                display: flex;
+                align-items: center;
+                height: fit-content;
 
-            > img {
-                margin-right: 4px;
+                > img {
+                    margin-right: 4px;
+                }
             }
         }
 
@@ -86,13 +86,13 @@
                 로그인
             </button>
             <div class="bottom-menu">
-                <div class="classed-menu">
-                    <img alt="자물쇠" class="icon" src="icon-lock.svg"/>
-                    <p class="menu-text">아이디 | 비밀번호 찾기</p>
+                <div>
+                    <img alt="자물쇠" src="icon-lock.svg"/>
+                    <p>아이디 | 비밀번호 찾기</p>
                 </div>
-                <div class="classed-menu">
-                    <img alt="회원가입" class="icon" src="icon-user.svg"/>
-                    <p class="menu-text">회원가입</p>
+                <div>
+                    <img alt="회원가입" src="icon-user.svg"/>
+                    <p>회원가입</p>
                 </div>
             </div>
         </div>
